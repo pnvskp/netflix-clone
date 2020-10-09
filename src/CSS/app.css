@@ -1,0 +1,11 @@
+/* * {
+  margin: 0;
+} */
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("./lineto-circular-book.ttf") format("truetype");
+}
+.App {
+  background-color: #111;
+  font-family: "Netflix Sans";
+}
