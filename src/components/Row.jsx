@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "../axios";
 import YouTube from "react-youtube";
 import MoviesDB from "moviedb-wrapper";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import "../CSS/row.css";
 
 const baseURL = "https://image.tmdb.org/t/p/w500/";
