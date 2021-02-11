@@ -22,17 +22,11 @@
 
 .poster {
   margin-right: 6px;
-  width: 100%;
   object-fit: contain;
   max-height: 150px;
-  max-width: 20vw;
-  transition: transform 450ms;
+  max-width: 18vw;
+  transition: transform 0.2s;
   cursor: pointer;
-  border-radius: 5px;
-}
-
-.poster:hover {
-  transform: scale(1.2);
   border-radius: 5px;
 }
 
@@ -40,13 +34,60 @@
   max-height: 300px;
 }
 
-.largeposter:hover {
-  transform: scale(1.4);
+.movie-desc {
+  position: relative;
+  transition: transform 450ms;
+}
+
+.movie-name {
+  cursor: pointer;
+}
+
+.movie-name-layer {
+  font-size: 16px;
+  color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity, visibility 0.45s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.movie-desc:hover .movie-name-layer {
+  z-index: 0;
+  transform: scale(1.2);
+  visibility: visible;
+  opacity: 1;
+}
+
+.movie-desc:hover .poster {
+  z-index: -1;
+  transform: scale(1.2);
+  overflow: visible;
+  border-radius: 5px;
+}
+
+.movie-desc:hover .largeposter {
+  transform: scale(1.2);
+  z-index: 2;
   margin-right: 30px;
 }
 
-.hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+@media only screen and (max-width: 650px) {
+  .movie-name-layer {
+    font-size: 8px;
+  }
+  .row_title {
+    font-size: 12px;
+  }
+  .row {
+    margin: 0;
+  }
 }

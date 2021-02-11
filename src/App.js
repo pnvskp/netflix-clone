@@ -22,6 +22,7 @@ function App() {
       />
       <Row title="Telugu Movies" fetchUrl={requests.fetchTeluguMovies} />
       <Row title="Action Films" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Asian TV" fetchUrl={requests.fetchAsianSeries}/>
       <Row title="Hindi Movies" fetchUrl={requests.fetchHindiMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
