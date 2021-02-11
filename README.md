@@ -6,7 +6,7 @@ Create an account and access the list by getting an API key.
 
 After getting the access, I segregated the movies according to the categories using the API docs.
 
-Pulled the necessary info to dispa=lay like the category name and images.
+Pulled the necessary info to display like the category name and images.
 
 Adjusted the row heights, Created the Banner and Navbar to get the similar structure of Netflix.
 
